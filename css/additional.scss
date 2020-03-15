@@ -1,0 +1,141 @@
+// Homepage
+.page-template-homepage {
+	.c-hero {
+		h1 {
+			@media (max-width: 400px) {
+				font-size: 2rem;
+			}
+		}
+		.c-hero__description {
+			@media (max-width: 400px) {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+  
+// Documentation
+.single-docs {
+	#primary .wp-block-image {
+		border: 1px solid #ddd;
+	  	box-shadow: 0 .125rem .25rem rgba(0,0,0,.3);
+  	}
+  	#main ul > li {
+	  	margin-bottom: .25rem;
+  	}
+  	.entry-meta {
+	 	display: none;
+	}
+}
+  
+// Doc/Bootstrap sidebar menu
+#accordion-docs, #bsks {
+	.card {
+		.card-header {
+			padding: .05rem .5rem;
+			background-color: rgba(0,0,0,.02);
+
+			.btn-link {
+				font-size: .95rem;
+				text-decoration: none;
+			}
+			.btn-link:hover {
+				text-decoration: none;
+			}
+		}
+		.card-body {
+			padding: .6rem 1.25rem;
+			ul li {
+				margin-bottom: .15rem;
+				font-size: .875rem;
+			}
+		}
+		ul li a:hover {
+			text-decoration: none;
+		}
+	}
+}
+#accordion-docs .card .card-body ul {
+	list-style: none;
+	padding-left: .5rem;
+	margin-bottom: 0;
+}
+#bsks .card .card-body ul {
+	padding-left: 1rem;
+	margin-bottom: 0;
+}
+
+// Features page
+.c-features-all {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+ul.c-features-all__list {
+	column-count: 1;
+
+	@media (min-width: 576px) {
+		column-count: 2;
+	}
+	@media (min-width: 768px) {
+		column-count: 3;
+	}
+	@media (min-width: 992px) {
+			column-count: 4;
+	}
+
+	> li {
+		margin-bottom: .5rem;
+	}
+	li::before {
+		font-family: "Font Awesome 5 Free";
+		content: "\f058";
+		color: #019875;
+		margin-right: 7px;
+		font-weight: 700;
+	}
+}
+.c-plugins {
+	border-top: 1px solid #d6eaff;
+	border-left: 1px solid #d6eaff;
+	margin-bottom: 2rem;
+
+  	.c-plugins__logo {
+	  	padding: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-right: 1px solid #d6eaff;
+		border-bottom: 1px solid #d6eaff;
+		overflow: hidden;
+		background: #fff;
+		height: 10rem;
+
+		img {
+			max-width: 200px;
+			width: 100%;
+			height: auto;
+		}
+  	}
+	a {
+		transition: .3s;
+		:hover {
+			opacity: .8;
+		}
+	}
+} 
+.c-right-selective li.list-group-item {
+	padding: .05rem .5rem;
+	background-color: rgba(0,0,0,.02);
+}
+  
+// Bootstrap Progress demo
+.progress.bd-example + .progress.bd-example {
+	margin-top: 1rem;
+}
+pre.conversions__bsks {
+	margin-top: 1.5rem;
+}

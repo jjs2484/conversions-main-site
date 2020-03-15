@@ -1,0 +1,20 @@
+{
+  "name": "conversions-main-site",
+  "version": "1.0.0",
+  "description": "Conversions Main Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jjs2484",
+  "license": "ISC",
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^2.0.1",
+    "autoprefixer": "^9.7.4",
+    "eslint": "^6.8.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "node-sass": "^4.13.1"
+  }
+}
