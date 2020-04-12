@@ -99,3 +99,8 @@ ul.c-features-all__list {
 
 pre.conversions__bsks {
   margin-top: 1.5rem; }
+
+@media (max-width: 767.98px) {
+  #wrapper-footer .gpl-footer-note {
+    margin: 0.75rem 0 0 0;
+    text-align: center; } }

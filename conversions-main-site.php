@@ -25,6 +25,7 @@ class Conversions_Main_Site {
 		add_action( 'wp_enqueue_scripts', [ $this, 'scripts' ], 777 );
 		add_action( 'conversions_homepage_after_features', [ $this, 'add_features_button' ], 777 );
 		add_action( 'init', [ $this, 'register_cpt_docs' ] );
+		add_action( 'conversions_footer_info', [ $this, 'gpl_footer_note' ], 30 );
 	}
 
 	/**
@@ -128,6 +129,21 @@ class Conversions_Main_Site {
 		];
 
 		register_post_type( 'docs', $args );
+	}
+
+	/**
+	 * GPL footer note
+	 *
+	 * @since 2020-04-12
+	 */
+	public function gpl_footer_note() {
+		?>
+		<div class="gpl-footer-note col-12">
+			<span class="text-white">
+				All products are distributed/sold under the terms of the GNU GPLv2.
+			</span>
+		</div>
+		<?php
 	}
 
 }
