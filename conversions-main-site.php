@@ -23,7 +23,10 @@ class Conversions_Main_Site {
 	 */
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'scripts' ], 777 );
+		// old hook.
 		add_action( 'conversions_homepage_after_features', [ $this, 'add_features_button' ], 777 );
+		// new hook.
+		add_action( 'conversions_after_icon_features', [ $this, 'add_features_button' ], 777 );
 		add_action( 'init', [ $this, 'register_cpt_docs' ] );
 		add_action( 'conversions_footer_info', [ $this, 'gpl_footer_note' ], 30 );
 	}
