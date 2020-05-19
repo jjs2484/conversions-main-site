@@ -11,10 +11,12 @@
   "devDependencies": {
     "@lodder/grunt-postcss": "^2.0.3",
     "autoprefixer": "^9.8.0",
-    "eslint": "^6.8.0",
     "grunt": "^1.1.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "eslint": "^7.0.0"
   }
 }
