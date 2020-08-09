@@ -14,11 +14,14 @@
   display: none; }
 
 #accordion-docs .card .card-header, #bsks .card .card-header {
-  padding: .05rem .5rem;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0.02); }
   #accordion-docs .card .card-header .btn-link, #bsks .card .card-header .btn-link {
     font-size: .95rem;
-    text-decoration: none; }
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding: .4rem 1rem; }
   #accordion-docs .card .card-header .btn-link:hover, #bsks .card .card-header .btn-link:hover {
     text-decoration: none; }
 #accordion-docs .card .card-body, #bsks .card .card-body {
