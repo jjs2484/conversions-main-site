@@ -29,6 +29,7 @@ class Conversions_Main_Site {
 		add_action( 'conversions_after_icon_features', [ $this, 'add_features_button' ], 777 );
 		add_action( 'init', [ $this, 'register_cpt_docs' ] );
 		add_action( 'conversions_footer_info', [ $this, 'gpl_footer_note' ], 30 );
+		add_action( 'wp_enqueue_scripts', [ $this, 'conditionally_load_cf_js_css' ] );
 	}
 
 	/**
@@ -147,6 +148,20 @@ class Conversions_Main_Site {
 			</span>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Conditionally load Contact Form 7 JS and CSS
+	 *
+	 * @since 2020-08-19
+	 */
+	public function conditionally_load_cf_js_css() {
+		if ( ! is_page( 2153 ) ) {
+			wp_dequeue_script( 'contact-form-7' );
+			wp_dequeue_script( 'google-recaptcha' );
+			wp_dequeue_script( 'google-invisible-recaptcha' );
+			wp_dequeue_style( 'contact-form-7' );
+		}
 	}
 
 }
