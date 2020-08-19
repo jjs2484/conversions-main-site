@@ -1,5 +1,6 @@
 // Homepage
 .page-template-homepage {
+	// Hero
 	.c-hero {
 		h1 {
 			@media (max-width: 400px) {
@@ -11,6 +12,10 @@
 				font-size: 1.2rem;
 			}
 		}
+	}
+	// Counter
+	section.c-counter .container-fluid {
+		padding-top: 0 !important;
 	}
 }
   

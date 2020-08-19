@@ -4,6 +4,8 @@
 @media (max-width: 400px) {
   .page-template-homepage .c-hero .c-hero__description {
     font-size: 1.2rem; } }
+.page-template-homepage section.c-counter .container-fluid {
+  padding-top: 0 !important; }
 
 .single-docs #primary .wp-block-image {
   border: 1px solid #ddd;
