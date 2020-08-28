@@ -109,3 +109,10 @@ pre.conversions__bsks {
   #wrapper-footer .gpl-footer-note {
     margin: 0.75rem 0 0 0;
     text-align: center; } }
+
+.page-template-premium-extensions section.cpe-heading {
+  padding-bottom: 3rem; }
+.page-template-premium-extensions section.extension {
+  padding: 3rem 0; }
+.page-template-premium-extensions section.odd {
+  background-color: #F3F3F3; }

@@ -13,7 +13,7 @@ get_header();
 
 <div id="#builder-wrapper" class="wrapper content-wrapper">
 
-	<section class="c-pe-heading">
+	<section class="cpe-heading">
 		<div class="container-fluid">
 			<div class="row">
 
@@ -22,14 +22,14 @@ get_header();
 					<p>
 						Conversions Premium Extensions is a collection of plugins for Conversions theme. They add many additional features to the theme and your website. The extensions are developed to help you attract more visitors and convert those visitors into customers and subscribers! You can selectively activate the extensions you want or need.
 					</p>
-					<a class="btn btn-outline-primary" href="/?edd_action=add_to_cart&download_id=3100">$49 - Add to Cart</button>
+					<a class="btn btn-outline-primary" href="/?edd_action=add_to_cart&download_id=3100">$49 - Add to Cart</a>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
-	<section class="c-pe-analytics odd">
+	<section class="cpe-analytics extension odd">
 		<div class="container-fluid">
 			<div class="row">
 
@@ -48,8 +48,61 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6">
+				<div class="col-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-analytics.png" alt="" class="c-pe-images"/>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="cpe-button-block-sizing extension">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-6">
+					<h2 class="h3">Button Block Sizing</h2>
+					<p>
+						The Button Block Sizing extension extends the default Gutenberg button block and adds Bootstrap button size options! After activating the extension, when editing Gutenberg buttons you will have a new panel available in the sidebar called "Sizing Control".
+					</p>
+					<p><strong>Button Block Sizing options:</strong></p>
+					<ul>
+						<li>Normal</li>
+						<li>Small</li>
+						<li>Large</li>
+						<li>Full width</li>
+					</ul>
+				</div>
+
+				<div class="col-6 d-flex align-items-center">
+					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-block-button-sizing.png" alt="" class="c-pe-images"/>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="cpe-metatags extension odd">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-6">
+					<h2 class="h3">Metatags</h2>
+					<p>
+						The Metatags extension is a lightweight SEO extension that allows you to add title tags, meta descriptions, JSON-LD schema, Twitter markup, and Facebook markup. Most SEO plugins available on the market today are very bloated with over 30,000+ lines of code on average. <strong>Conversions Metatags is less than 750 lines of code!</strong>
+					</p>
+					<p><strong>Metatags features:</strong></p>
+					<ul>
+						<li>Title tags</li>
+						<li>Meta descriptions</li>
+						<li>JSON-LD Schema Markup</li>
+						<li>Facebook metatags</li>
+						<li>Twitter metatags</li>
+					</ul>
+				</div>
+
+				<div class="col-6 d-flex align-items-center">
+					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-metatags.png" alt="" class="c-pe-images"/>
 				</div>
 
 			</div>
