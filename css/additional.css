@@ -114,5 +114,8 @@ pre.conversions__bsks {
   padding-bottom: 3rem; }
 .page-template-premium-extensions section.extension {
   padding: 3rem 0; }
+  .page-template-premium-extensions section.extension .c-pe-images, .page-template-premium-extensions section.extension .embed-responsive {
+    border: 1px solid #ddd;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3); }
 .page-template-premium-extensions section.odd {
   background-color: #F3F3F3; }

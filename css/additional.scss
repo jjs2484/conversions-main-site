@@ -165,6 +165,11 @@ pre.conversions__bsks {
 	}
 	section.extension {
 		padding: 3rem 0;
+		
+		.c-pe-images, .embed-responsive {
+			border: 1px solid #ddd;
+			box-shadow: 0 .125rem .25rem rgba(0,0,0,.3);
+		}
 	}
 	section.odd {
 		background-color: #F3F3F3;

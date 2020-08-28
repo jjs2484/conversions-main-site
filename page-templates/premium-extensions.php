@@ -22,7 +22,7 @@ get_header();
 					<p>
 						Conversions Premium Extensions is a collection of plugins for Conversions theme. They add many additional features to the theme and your website. The extensions are developed to help you attract more visitors and convert those visitors into customers and subscribers! You can selectively activate the extensions you want or need.
 					</p>
-					<a class="btn btn-outline-primary" href="/?edd_action=add_to_cart&download_id=3100">$49 - Add to Cart</a>
+					<a class="btn btn-outline-primary btn-lg" href="/?edd_action=add_to_cart&download_id=3100">$49 - Add to Cart</a>
 				</div>
 
 			</div>
@@ -103,6 +103,63 @@ get_header();
 
 				<div class="col-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-metatags.png" alt="" class="c-pe-images"/>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="cpe-sticky-sidebar extension">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-6">
+					<h2 class="h3">Sticky Sidebar</h2>
+					<p>
+						The Sticky Sidebar extension makes the Conversions theme sidebar sticky. Just activate the extension and the rest is taken care of! The extension uses browsers native position:sticky to achieve a high performance sticky sidebar.</p>
+					<p><strong>Sticky Sidebar features:</strong></p>
+					<ul>
+						<li>High performance - no scroll event listeners!</li>
+						<li>Smart - works whether your sidebar is taller or shorter than the viewport.</li>
+						<li>Includes a resize sensor.</li>
+						<li>Compatible with Chrome, Safari, and Firefox.</li>
+						<li>Automatically disabled in IE (can selectively be re-enabled).</li>
+					</ul>
+				</div>
+
+				<div class="col-6 d-flex align-items-center">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KbdsYLkTwmQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="cpe-wp-head-cleanup extension odd">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-6">
+					<h2 class="h3">WP Head Cleanup</h2>
+					<p>
+						The WP HEAD Cleanup extension allows you to remove some unnecessary <meta>-tags that WordPress outputs by default to the <head> section of your website. You can adjust them on a case-by-case basis depending on your website’s needs.
+					</p>
+					<p><strong>WP Head Cleanup features:</strong></p>
+					<ul>
+						<li>Remove RSS feed links</li>
+						<li>Remove WordPress version</li>
+						<li>Remove shortlink</li>
+						<li>Remove XML-RPC link</li>
+						<li>Remove wlwmanifest link</li>
+						<li>Remove post relational links</li>
+						<li>Remove emojis</li>
+					</ul>
+				</div>
+
+				<div class="col-6 d-flex align-items-center">
+					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-head-cleanup.png" alt="" class="c-pe-images"/>
 				</div>
 
 			</div>
