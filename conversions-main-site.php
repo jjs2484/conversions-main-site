@@ -30,6 +30,8 @@ class Conversions_Main_Site {
 		add_action( 'init', [ $this, 'register_cpt_docs' ] );
 		add_action( 'conversions_footer_info', [ $this, 'gpl_footer_note' ], 30 );
 		add_action( 'wp_print_scripts', [ $this, 'conditionally_load_cf_js_css' ] );
+		add_filter( 'theme_page_templates', [ $this, 'pe_custom_page_template_select' ], 10, 4 );
+		add_filter( 'template_include', [ $this, 'pe_custom_page_template_load' ] );
 	}
 
 	/**
@@ -161,6 +163,39 @@ class Conversions_Main_Site {
 			wp_dequeue_script( 'wpcf7-recaptcha' );
 			wp_dequeue_script( 'google-invisible-recaptcha' );
 		}
+	}
+
+	/**
+	 * Add Premium Extensions sales page custom page template.
+	 *
+	 * @since 2020-08-28
+	 */
+	public function pe_custom_page_template_select( $post_templates, $wp_theme, $post, $post_type ) {
+
+		// Add custom template named premium-extensions.php to select dropdown.
+		$post_templates['premium-extensions.php'] = __( 'Premium extensions' );
+
+		return $post_templates;
+	}
+
+	/**
+	 * Check if current page has our Premium Extensions sales custom template.
+	 *
+	 * If so try to load from root plugin directory.
+	 *
+	 * @since 2020-08-28
+	 */
+	public function pe_custom_page_template_load( $template ) {
+
+		if ( get_page_template_slug() === 'premium-extensions.php' ) {
+			$template = plugin_dir_path( __FILE__ ) . '/page-templates/premium-extensions.php';
+		}
+
+		if ( $template == '' ) {
+			throw new \Exception( 'No template found' );
+		}
+
+		return $template;
 	}
 
 }
