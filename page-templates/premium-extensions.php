@@ -166,6 +166,55 @@ get_header();
 		</div>
 	</section>
 
+	<section class="cpe-pricing extension">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="cpe-pricing__table col-12">
+
+					<div class="card shadow">
+						<header class="card-header">
+							<h4 class="h5 text-secondary mb-3">
+								Premium Extensions
+							</h4>
+							<span class="d-block">
+								<span class="display-4">
+									$49
+								</span>
+								<span class="d-block text-secondary">
+									Yearly
+								</span>
+							</span>
+						</header>
+						<div class="card-body">
+							<div class="row">
+								<div class="cpe-pricing__table-features col-6">
+									<ul class="list-unstyled mb-4">
+										<li>Analytics</li>
+										<li>Button block sizing</li>
+										<li>Metatags</li>
+										<li>Sticky sidebar</li>
+										<li>WP Head cleanup</li>
+									</ul>
+								</div>
+								<div class="cpe-pricing__table-features col-6">
+									<ul class="list-unstyled mb-4">
+										<li>Unlimited Site Usage</li>
+										<li>Updates Included</li>
+										<li>Upcoming Extensions</li>
+										<li>Email Support</li>
+									</ul>
+								</div>
+								<a href="/?edd_action=add_to_cart&download_id=3100" class="btn btn-block btn-primary btn-lg">$49 - Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
 </div><!-- Wrapper end -->
 
 <?php

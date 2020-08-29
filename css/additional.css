@@ -111,11 +111,34 @@ pre.conversions__bsks {
     text-align: center; } }
 
 .page-template-premium-extensions section.cpe-heading {
-  padding-bottom: 3rem; }
+  padding-top: 1rem;
+  padding-bottom: 4rem; }
 .page-template-premium-extensions section.extension {
-  padding: 3rem 0; }
+  padding: 4rem 0; }
   .page-template-premium-extensions section.extension .c-pe-images, .page-template-premium-extensions section.extension .embed-responsive {
     border: 1px solid #ddd;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3); }
 .page-template-premium-extensions section.odd {
   background-color: #F3F3F3; }
+.page-template-premium-extensions .cpe-pricing__table {
+  margin-bottom: 1.5rem; }
+  .page-template-premium-extensions .cpe-pricing__table .card {
+    max-width: 42rem;
+    margin: 0 auto; }
+    .page-template-premium-extensions .cpe-pricing__table .card .card-header {
+      background-color: #fff;
+      text-align: center;
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+      border: 0; }
+    .page-template-premium-extensions .cpe-pricing__table .card .card-body {
+      text-align: center;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 1.5rem; }
+    .page-template-premium-extensions .cpe-pricing__table .card li {
+      font-size: 0.94rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      .page-template-premium-extensions .cpe-pricing__table .card li:last-of-type {
+        border-bottom: 0; }
