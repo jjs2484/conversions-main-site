@@ -32,6 +32,7 @@ class Conversions_Main_Site {
 		add_action( 'wp_print_scripts', [ $this, 'conditionally_load_cf_js_css' ] );
 		add_filter( 'theme_page_templates', [ $this, 'pe_custom_page_template_select' ], 10, 4 );
 		add_filter( 'template_include', [ $this, 'pe_custom_page_template_load' ] );
+		add_filter( 'wp_nav_menu_items', [ $this, 'wp_nav_menu_items' ], 777, 2 );
 	}
 
 	/**
@@ -197,6 +198,29 @@ class Conversions_Main_Site {
 
 		return $template;
 	}
+
+	/**
+	 * Add menu items from customizer options.
+	 *
+	 * @since 2019-08-30
+	 *
+	 * @param string $items Menu items.
+	 * @param string $args Arguments.
+	 */
+	public function wp_nav_menu_items( $items, $args ) {
+		if ( $args->theme_location === 'primary' ) {
+			$nav_button_2 = sprintf(
+				'<li class="nav-callout-button menu-item nav-item"><a title="%1$s" href="%2$s" class="btn %3$s">%1$s</a></li>',
+				esc_html( 'Premium' ),
+				esc_url( '/premium-extensions/' ),
+				esc_attr( 'btn-outline-dark' )
+			);
+
+			// Add the nav button to the end of the menu.
+			$items .= $nav_button_2;
+		}
+		return $items;
+	}		
 
 }
 $conversions_main_site = new Conversions_Main_Site();
