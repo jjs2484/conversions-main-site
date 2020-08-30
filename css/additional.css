@@ -111,10 +111,21 @@ pre.conversions__bsks {
     text-align: center; } }
 
 .page-template-premium-extensions section.cpe-heading {
-  padding-top: 1rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 3rem; }
+  @media (min-width: 992px) {
+    .page-template-premium-extensions section.cpe-heading {
+      padding-top: 1rem;
+      padding-bottom: 4rem; } }
+  .page-template-premium-extensions section.cpe-heading ul li i {
+    font-size: .85rem;
+    margin-right: .25rem; }
+.page-template-premium-extensions section.cpe-pricing.extension {
+  padding-bottom: 2rem; }
 .page-template-premium-extensions section.extension {
-  padding: 4rem 0; }
+  padding: 3rem 0; }
+  @media (min-width: 992px) {
+    .page-template-premium-extensions section.extension {
+      padding: 4rem 0; } }
   .page-template-premium-extensions section.extension .c-pe-images, .page-template-premium-extensions section.extension .embed-responsive {
     border: 1px solid #ddd;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3); }
@@ -132,13 +143,31 @@ pre.conversions__bsks {
       padding-bottom: 0;
       border: 0; }
     .page-template-premium-extensions .cpe-pricing__table .card .card-body {
-      text-align: center;
       padding-left: 3rem;
       padding-right: 3rem;
-      padding-bottom: 1.5rem; }
+      padding-bottom: 1.5rem;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .page-template-premium-extensions .cpe-pricing__table .card .card-body {
+          text-align: left; } }
+    @media (max-width: 767.98px) {
+      .page-template-premium-extensions .cpe-pricing__table .card ul.cpe-pricing__list-first {
+        margin-bottom: 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125); } }
     .page-template-premium-extensions .cpe-pricing__table .card li {
       font-size: 0.94rem;
       padding: 0.5rem 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
       .page-template-premium-extensions .cpe-pricing__table .card li:last-of-type {
         border-bottom: 0; }
+      @media (min-width: 768px) {
+        .page-template-premium-extensions .cpe-pricing__table .card li {
+          padding-left: 20%; } }
+      .page-template-premium-extensions .cpe-pricing__table .card li i {
+        font-size: .85rem;
+        margin-right: .25rem; }
+        @media (max-width: 767.98px) {
+          .page-template-premium-extensions .cpe-pricing__table .card li i {
+            display: none; } }
+.page-template-premium-extensions .c-cta {
+  display: none; }

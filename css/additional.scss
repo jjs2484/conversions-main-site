@@ -161,11 +161,26 @@ pre.conversions__bsks {
 // Premium Extensions sales page
 .page-template-premium-extensions {
 	section.cpe-heading {
-		padding-top: 1rem;
-		padding-bottom: 4rem;
+		padding-bottom: 3rem;
+		@media (min-width: 992px) {
+			padding-top: 1rem;
+			padding-bottom: 4rem;
+		}
+		ul li {
+			i {
+				font-size: .85rem;
+				margin-right: .25rem;
+			}
+		}
+	}
+	section.cpe-pricing.extension {
+		padding-bottom: 2rem;
 	}
 	section.extension {
-		padding: 4rem 0;
+		padding: 3rem 0;
+		@media (min-width: 992px) {
+			padding: 4rem 0;
+		}
 		
 		.c-pe-images, .embed-responsive {
 			border: 1px solid #ddd;
@@ -188,10 +203,19 @@ pre.conversions__bsks {
 				border: 0;
 			}
 			.card-body {
-				text-align: center;
 				padding-left: 3rem;
 				padding-right: 3rem;
 				padding-bottom: 1.5rem;
+				text-align: center;
+				@media (min-width: 768px) {
+					text-align: left;
+				}
+			}
+			ul.cpe-pricing__list-first {
+				@media (max-width: 767.98px) {
+					margin-bottom: 0 !important;
+					border-bottom: 1px solid rgba(0,0,0,.125);
+				}
 			}
 			li {
 				font-size: 0.94rem;
@@ -200,7 +224,21 @@ pre.conversions__bsks {
 				&:last-of-type {
 					border-bottom: 0;
 				}
+				@media (min-width: 768px) {
+					padding-left: 20%;
+				}
+				i {
+					@media (max-width: 767.98px) {
+						display: none;
+					}
+					font-size: .85rem;
+					margin-right: .25rem;
+				}
 			}
 		}
+	}
+
+	.c-cta {
+		display: none;
 	}
 }

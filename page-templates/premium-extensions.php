@@ -22,6 +22,11 @@ get_header();
 					<p>
 						Conversions Premium Extensions is a collection of plugins for Conversions theme. They add many additional features to the theme and your website. The extensions are developed to help you attract more visitors and convert those visitors into customers and subscribers! You can selectively activate the extensions you want or need.
 					</p>
+					<ul class="list-unstyled">
+						<li><i class="fas fa-check text-success"></i> 5 Premium Extensions</li>
+						<li><i class="fas fa-check text-success"></i> Access to Upcoming Extensions</li>
+						<li><i class="fas fa-check text-success"></i> Full Support</li>
+					</ul>
 					<a class="btn btn-outline-primary btn-lg" href="/?edd_action=add_to_cart&download_id=3100">$49 - Add to Cart</a>
 				</div>
 
@@ -33,7 +38,7 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="h3">Analytics</h2>
 					<p>
 						The Analytics extension allows you to add tracking scripts to the header, body, and footer. You have the flexibility to add any type of tracking script: Google, Bing, Facebook, etc. Furthermore, you can manage all your analytic scripts in one place rather than needing separate plugins for each one.
@@ -48,7 +53,7 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-md-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-analytics.png" alt="" class="c-pe-images"/>
 				</div>
 
@@ -60,7 +65,7 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="h3">Button Block Sizing</h2>
 					<p>
 						The Button Block Sizing extension extends the default Gutenberg button block and adds Bootstrap button size options! After activating the extension, when editing Gutenberg buttons you will have a new panel available in the sidebar called "Sizing Control".
@@ -74,7 +79,7 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-md-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-block-button-sizing.png" alt="" class="c-pe-images"/>
 				</div>
 
@@ -86,7 +91,7 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="h3">Metatags</h2>
 					<p>
 						The Metatags extension is a lightweight SEO extension that allows you to add title tags, meta descriptions, JSON-LD schema, Twitter markup, and Facebook markup. Most SEO plugins available on the market today are very bloated with over 30,000+ lines of code on average. <strong>Conversions Metatags is less than 750 lines of code!</strong>
@@ -101,7 +106,7 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-md-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-metatags.png" alt="" class="c-pe-images"/>
 				</div>
 
@@ -113,7 +118,7 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="h3">Sticky Sidebar</h2>
 					<p>
 						The Sticky Sidebar extension makes the Conversions theme sidebar sticky. Just activate the extension and the rest is taken care of! The extension uses browsers native position:sticky to achieve a high performance sticky sidebar.</p>
@@ -127,7 +132,7 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-md-6 d-flex align-items-center">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KbdsYLkTwmQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
@@ -141,7 +146,7 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="h3">WP Head Cleanup</h2>
 					<p>
 						The WP HEAD Cleanup extension allows you to remove some unnecessary <meta>-tags that WordPress outputs by default to the <head> section of your website. You can adjust them on a case-by-case basis depending on your website’s needs.
@@ -158,7 +163,7 @@ get_header();
 					</ul>
 				</div>
 
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-md-6 d-flex align-items-center">
 					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-head-cleanup.png" alt="" class="c-pe-images"/>
 				</div>
 
@@ -188,27 +193,31 @@ get_header();
 						</header>
 						<div class="card-body">
 							<div class="row">
-								<div class="cpe-pricing__table-features col-6">
-									<ul class="list-unstyled mb-4">
-										<li>Analytics</li>
-										<li>Button block sizing</li>
-										<li>Metatags</li>
-										<li>Sticky sidebar</li>
-										<li>WP Head cleanup</li>
+								<div class="cpe-pricing__table-features col-12 col-md-6">
+									<ul class="list-unstyled mb-4 cpe-pricing__list-first">
+										<li><i class="fas fa-check text-success"></i> Analytics</li>
+										<li><i class="fas fa-check text-success"></i> Button block sizing</li>
+										<li><i class="fas fa-check text-success"></i> Metatags</li>
+										<li><i class="fas fa-check text-success"></i> Sticky sidebar</li>
+										<li><i class="fas fa-check text-success"></i> WP Head cleanup</li>
 									</ul>
 								</div>
-								<div class="cpe-pricing__table-features col-6">
+								<div class="cpe-pricing__table-features col-12 col-md-6">
 									<ul class="list-unstyled mb-4">
-										<li>Unlimited Site Usage</li>
-										<li>Updates Included</li>
-										<li>Upcoming Extensions</li>
-										<li>Email Support</li>
+										<li><i class="fas fa-check text-success"></i> Unlimited Site Usage</li>
+										<li><i class="fas fa-check text-success"></i> Updates Included</li>
+										<li><i class="fas fa-check text-success"></i> Upcoming Extensions</li>
+										<li><i class="fas fa-check text-success"></i> Full Support</li>
 									</ul>
 								</div>
 								<a href="/?edd_action=add_to_cart&download_id=3100" class="btn btn-block btn-primary btn-lg">$49 - Add to Cart</a>
 							</div>
 						</div>
 					</div>
+				</div>
+
+				<div class="cpe-charities col-12">
+					<p class="text-center text-secondary mt-3 mb-0">Discounts are available to charities, non-profits, and developing countries. <a href="/contact/">Contact us</a> prior to purchase.</p>
 				</div>
 
 			</div>
