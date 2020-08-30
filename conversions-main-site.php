@@ -220,7 +220,7 @@ class Conversions_Main_Site {
 			$items .= $nav_button_2;
 		}
 		return $items;
-	}		
+	}
 
 }
 $conversions_main_site = new Conversions_Main_Site();
