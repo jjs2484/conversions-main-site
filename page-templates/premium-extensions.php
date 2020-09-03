@@ -50,6 +50,7 @@ get_header();
 						<li>Supports all types of tracking scripts (Google, Bing, Facebook, etc.).</li>
 						<li>Choose script placement: header, body, or footer.</li>
 						<li>Extremely lightweight and highly flexible.</li>
+						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-analytics">View documentation</a></li>
 					</ul>
 				</div>
 
@@ -76,6 +77,7 @@ get_header();
 						<li>Small</li>
 						<li>Large</li>
 						<li>Full width</li>
+						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-button-sizing">View documentation</a></li>
 					</ul>
 				</div>
 
@@ -103,6 +105,7 @@ get_header();
 						<li>JSON-LD Schema Markup</li>
 						<li>Facebook metatags</li>
 						<li>Twitter metatags</li>
+						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-metatags">View documentation</a></li>
 					</ul>
 				</div>
 
@@ -129,6 +132,7 @@ get_header();
 						<li>Includes a resize sensor.</li>
 						<li>Compatible with Chrome, Safari, and Firefox.</li>
 						<li>Automatically disabled in IE (can selectively be re-enabled).</li>
+						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-sticky-sidebar">View documentation</a></li>
 					</ul>
 				</div>
 
@@ -160,6 +164,7 @@ get_header();
 						<li>Remove wlwmanifest link</li>
 						<li>Remove post relational links</li>
 						<li>Remove emojis</li>
+						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-wp-head-cleanup">View documentation</a></li>
 					</ul>
 				</div>
 
