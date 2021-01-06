@@ -1,3 +1,7 @@
+@media (max-width: 991.98px) {
+  ul#main-menu li.nav-callout-button:last-of-type {
+    margin: .5rem 0; } }
+
 @media (max-width: 400px) {
   .page-template-homepage .c-hero h1 {
     font-size: 2rem; } }
@@ -7,7 +11,7 @@
 .page-template-homepage section.c-counter .container-fluid {
   padding-top: 0 !important; }
 
-.single-docs #primary .wp-block-image {
+.single-docs #primary .wp-block-image img {
   border: 1px solid #ddd;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3); }
 .single-docs #main ul > li {

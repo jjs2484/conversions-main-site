@@ -1,3 +1,12 @@
+// Navbar
+ul#main-menu {
+	li.nav-callout-button:last-of-type {
+		@media (max-width: 991.98px) {
+			margin: .5rem 0;
+		}
+	}
+}
+
 // Homepage
 .page-template-homepage {
 	// Hero
@@ -21,7 +30,7 @@
   
 // Documentation
 .single-docs {
-	#primary .wp-block-image {
+	#primary .wp-block-image img {
 		border: 1px solid #ddd;
 	  	box-shadow: 0 .125rem .25rem rgba(0,0,0,.3);
   	}
@@ -92,7 +101,7 @@ ul.c-features-all__list {
 		column-count: 3;
 	}
 	@media (min-width: 992px) {
-			column-count: 4;
+		column-count: 4;
 	}
 
 	> li {
