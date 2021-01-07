@@ -59,6 +59,11 @@ ul#main-menu {
 			.btn-link:hover {
 				text-decoration: none;
 			}
+			.btn-link:focus {
+				outline: 0;
+				box-shadow: none;
+				border-radius: 0;
+			}
 		}
 		.card-body {
 			padding: .6rem 1.25rem;

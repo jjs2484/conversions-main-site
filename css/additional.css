@@ -30,6 +30,10 @@
     padding: .4rem 1rem; }
   #accordion-docs .card .card-header .btn-link:hover, #bsks .card .card-header .btn-link:hover {
     text-decoration: none; }
+  #accordion-docs .card .card-header .btn-link:focus, #bsks .card .card-header .btn-link:focus {
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0; }
 #accordion-docs .card .card-body, #bsks .card .card-body {
   padding: .6rem 1.25rem; }
   #accordion-docs .card .card-body ul li, #bsks .card .card-body ul li {
