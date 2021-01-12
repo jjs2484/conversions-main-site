@@ -128,7 +128,7 @@ pre.conversions__bsks {
     font-size: .85rem;
     margin-right: .25rem; }
 .page-template-premium-extensions section.cpe-pricing.extension {
-  padding-bottom: 2rem; }
+  padding-bottom: 4rem; }
 .page-template-premium-extensions section.extension {
   padding: 3rem 0; }
   @media (min-width: 992px) {
@@ -179,3 +179,5 @@ pre.conversions__bsks {
             display: none; } }
 .page-template-premium-extensions .c-cta {
   display: none; }
+.page-template-premium-extensions .wrapper {
+  padding-bottom: 0; }

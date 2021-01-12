@@ -87,7 +87,7 @@ ul#main-menu {
 	margin-bottom: 0;
 }
 
-// Features page
+// Features
 .c-features-all {
 	display: flex;
 	display: -webkit-flex;
@@ -188,7 +188,7 @@ pre.conversions__bsks {
 		}
 	}
 	section.cpe-pricing.extension {
-		padding-bottom: 2rem;
+		padding-bottom: 4rem;
 	}
 	section.extension {
 		padding: 3rem 0;
@@ -254,5 +254,9 @@ pre.conversions__bsks {
 
 	.c-cta {
 		display: none;
+	}
+
+	.wrapper {
+		padding-bottom: 0;
 	}
 }
