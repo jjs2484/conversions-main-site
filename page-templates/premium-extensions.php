@@ -23,7 +23,7 @@ get_header();
 						Conversions Premium Extensions is a collection of plugins for Conversions theme. They add many additional features to the theme and your website. The extensions are developed to help you attract more visitors and convert those visitors into customers and subscribers! You can selectively activate the extensions you want or need.
 					</p>
 					<ul class="list-unstyled">
-						<li><i class="fas fa-check text-success"></i> 5 Premium Extensions</li>
+						<li><i class="fas fa-check text-success"></i> 4 Premium Extensions</li>
 						<li><i class="fas fa-check text-success"></i> Access to Upcoming Extensions</li>
 						<li><i class="fas fa-check text-success"></i> Full Support</li>
 					</ul>
@@ -62,34 +62,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="cpe-button-block-sizing extension">
-		<div class="container-fluid">
-			<div class="row">
-
-				<div class="col-12 col-md-6">
-					<h2 class="h3">Button Block Sizing</h2>
-					<p>
-						The Button Block Sizing extension extends the default Gutenberg button block and adds Bootstrap button size options! After activating the extension, when editing Gutenberg buttons you will have a new panel available in the sidebar called "Sizing Control".
-					</p>
-					<p><strong>Button Block Sizing options:</strong></p>
-					<ul>
-						<li>Normal</li>
-						<li>Small</li>
-						<li>Large</li>
-						<li>Full width</li>
-						<li><a href="https://conversionswp.com/docs/premium-extensions/#cpe-button-sizing">View documentation</a></li>
-					</ul>
-				</div>
-
-				<div class="col-12 col-md-6 d-flex align-items-center">
-					<img src="https://conversionswp.com/wp-content/uploads/2020/08/conversions-block-button-sizing.png" alt="" class="c-pe-images"/>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="cpe-metatags extension odd">
+	<section class="cpe-metatags extension">
 		<div class="container-fluid">
 			<div class="row">
 
@@ -117,7 +90,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="cpe-sticky-sidebar extension">
+	<section class="cpe-sticky-sidebar extension odd">
 		<div class="container-fluid">
 			<div class="row">
 
@@ -146,7 +119,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="cpe-wp-head-cleanup extension odd">
+	<section class="cpe-wp-head-cleanup extension">
 		<div class="container-fluid">
 			<div class="row">
 
@@ -176,7 +149,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="cpe-pricing extension">
+	<section class="cpe-pricing extension odd">
 		<div class="container-fluid">
 			<div class="row">
 
