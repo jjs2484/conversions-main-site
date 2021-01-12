@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Conversions Main Site
  * Description: Styles, scripts, and functions.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: js2484
  * Author URI: https://conversionswp.com
  */
