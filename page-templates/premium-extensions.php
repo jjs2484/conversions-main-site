@@ -174,7 +174,6 @@ get_header();
 								<div class="cpe-pricing__table-features col-12 col-md-6">
 									<ul class="list-unstyled mb-4 cpe-pricing__list-first">
 										<li><i class="fas fa-check text-success"></i> Analytics</li>
-										<li><i class="fas fa-check text-success"></i> Button block sizing</li>
 										<li><i class="fas fa-check text-success"></i> Metatags</li>
 										<li><i class="fas fa-check text-success"></i> Sticky sidebar</li>
 										<li><i class="fas fa-check text-success"></i> WP Head cleanup</li>
