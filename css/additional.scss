@@ -154,12 +154,24 @@ ul.c-features-all__list {
 	background-color: rgba(0,0,0,.02);
 }
   
-// Bootstrap Progress demo
-.progress.bd-example + .progress.bd-example {
-	margin-top: 1rem;
+// Bootstrap demo
+.bd-heading + div > * + * {
+	margin-top: 3rem;
 }
-pre.conversions__bsks {
-	margin-top: 1.5rem;
+.bd-heading {
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+}
+[id="modal"] .bd-example .btn,
+[id="buttons"] .bd-example .btn,
+[id="tooltips"] .bd-example .btn,
+[id="popovers"] .bd-example .btn,
+[id="dropdowns"] .bd-example .btn-group,
+[id="dropdowns"] .bd-example .dropdown,
+[id="dropdowns"] .bd-example .dropup,
+[id="dropdowns"] .bd-example .dropend,
+[id="dropdowns"] .bd-example .dropstart {
+	margin: 0 1rem 1rem 0;
 }
 
 // GPL footer note
