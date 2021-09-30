@@ -173,6 +173,12 @@ ul.c-features-all__list {
 [id="dropdowns"] .bd-example .dropstart {
 	margin: 0 1rem 1rem 0;
 }
+.scrollspy-example {
+	position: relative;
+	height: 200px;
+	margin-top: .5rem;
+	overflow: auto;
+}
 
 // GPL footer note
 #wrapper-footer {
