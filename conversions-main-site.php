@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Conversions Main Site
  * Description: Styles, scripts, and functions.
- * Version: 1.0.8
+ * Version: 1.0.9
  * Author: js2484
  * Author URI: https://conversionswp.com
  */
@@ -33,6 +33,7 @@ class Conversions_Main_Site {
 		add_filter( 'theme_page_templates', [ $this, 'pe_custom_page_template_select' ], 10, 4 );
 		add_filter( 'template_include', [ $this, 'pe_custom_page_template_load' ] );
 		add_filter( 'wp_nav_menu_items', [ $this, 'wp_nav_menu_items' ], 777, 2 );
+		add_shortcode( 'theme_stats', [ $this, 'theme_stats' ] );
 	}
 
 	/**
@@ -220,6 +221,86 @@ class Conversions_Main_Site {
 			$items .= $nav_button_2;
 		}
 		return $items;
+	}
+
+	/**
+	 * Makes a call to the WordPress.org Themes API, v1.0
+	 *
+	 * @param string $action Either query_themes (a list of themes), theme_information (Information about a specific theme), hot_tags (List of the most popular theme tags), feature_list (List of valid theme tags).
+	 * @param array  $api_params Parameters.
+	 * @return object Only the body of the raw response as a PHP object.
+	 */
+	public function call_wp_api_themes( $action, $api_params = array() ) {
+		$url       = 'https://api.wordpress.org/themes/info/1.0/';
+		$args      = (object) $api_params;
+		$http_args = array(
+			'body' => array(
+				'action'  => $action,
+				'timeout' => 15,
+				'request' => serialize( $args ),
+			),
+		);
+
+		$request = wp_remote_post( $url, $http_args );
+
+		if ( is_wp_error( $request ) ) {
+			// error_log('WP_ERROR = ');error_log( print_r( $request, true ) );
+			return false;
+		}
+
+		return maybe_unserialize( wp_remote_retrieve_body( $request ) );
+	}
+
+	/**
+	 * Theme stats shortcode.
+	 */
+	public function theme_stats( $atts = array() ) {
+
+		// Default options.
+		$atts = shortcode_atts(
+			array(
+				'slug' => 'twentytwentytwo',
+				'arg'  => 'downloaded',
+			),
+			$atts,
+		);
+
+		// Create unique transient title for each arg.
+		$transient_slug  = sanitize_title( $atts['slug'] );
+		$transient_slug  = str_replace( '-', '_', $transient_slug );
+		$transient_arg   = sanitize_title( $atts['arg'] );
+		$transient_arg   = str_replace( '-', '_', $transient_arg );
+		$transient_title = 'cabczyv_' . $transient_slug . '_' . $transient_arg;
+
+		// If transient exists use that else call API.
+		if ( get_transient( $transient_title ) !== false ) {
+			$value = get_transient( $transient_title );
+		} else {
+			$api_params = array(
+				'slug'   => $atts['slug'],
+				'fields' => [
+					'rating'          => true,
+					'downloaded'      => true,
+					'download_link'   => true,
+					'last_updated'    => true,
+					'homepage'        => true,
+					'tags'            => true,
+					'template'        => true,
+					'screenshot_url'  => true,
+					'active_installs' => true,
+				],
+			);
+			$theme_object = $this->call_wp_api_themes( 'theme_information', $api_params );
+			$value        = $theme_object->$transient_arg;
+			set_transient( $transient_title, $value, 24 * HOUR_IN_SECONDS );
+		}
+
+		// If download count add some commas.
+		if ( $transient_arg == 'downloaded' ) {
+			$value = number_format( $value );
+		}
+
+		return $value;
 	}
 
 }
