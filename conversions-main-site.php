@@ -34,6 +34,9 @@ class Conversions_Main_Site {
 		add_filter( 'template_include', [ $this, 'pe_custom_page_template_load' ] );
 		add_filter( 'wp_nav_menu_items', [ $this, 'wp_nav_menu_items' ], 777, 2 );
 		add_shortcode( 'theme_stats', [ $this, 'theme_stats' ] );
+		add_filter( 'wp_nav_menu', [ $this, 'conversions_menu_notitle' ] );
+		add_filter( 'conversions_nav_open_wrapper', [ $this, 'conversions_nav_open_wrapper' ] );
+		add_action( 'wp_head', [ $this, 'conversions_topbar_style' ], 9999 );
 	}
 
 	/**
@@ -253,6 +256,8 @@ class Conversions_Main_Site {
 
 	/**
 	 * Theme stats shortcode.
+	 *
+	 * @param array $atts Shortcode attributes.
 	 */
 	public function theme_stats( $atts = array() ) {
 
@@ -303,5 +308,49 @@ class Conversions_Main_Site {
 		return $value;
 	}
 
+	/**
+	 * Remove titles on menu -- for accessibility.
+	 *
+	 * @param string $menu Menu.
+	 */
+	public function conversions_menu_notitle( $menu ) {
+		$menu = preg_replace( '/ title=\"(.*?)\"/', '', $menu );
+		return $menu;
+	}
+
+	/**
+	 * Navbar add notice above.
+	 *
+	 * @since 2021-05-22
+	 *
+	 * @param string $navbar_open Navbar opening wrapper.
+	 */
+	public function conversions_nav_open_wrapper( $navbar_open ) {
+
+		$nav_notice = '<div role="alert" class="alert alert-info"><div class="container-fluid">Conversions v9.0 RC1 with Bootstrap 5 is available <a href="/download/" style="color:#0c5460"><strong>Download</strong></a></div></div>';
+
+		$navbar_open = $nav_notice . $navbar_open;
+
+		return $navbar_open;
+	}
+
+	/**
+	 * Top bar styles.
+	 */
+	public function conversions_topbar_style() {
+		?>
+		<style>
+			div.content-wrapper {
+				margin-top: 128px;
+				@media (min-width: 537px) {
+					margin-top: 104px;
+				}
+			}
+			#wrapper-navbar .alert {
+				margin-bottom: 0;
+			}
+		</style>
+		<?php
+	}
 }
 $conversions_main_site = new Conversions_Main_Site();
