@@ -268,6 +268,7 @@ class Conversions_Main_Site {
 				'arg'  => 'downloaded',
 			),
 			$atts,
+			'theme_stats'
 		);
 
 		// Create unique transient title for each arg.
