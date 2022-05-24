@@ -74,7 +74,7 @@ ul.c-features-all__list {
   ul.c-features-all__list > li {
     margin-bottom: .5rem; }
   ul.c-features-all__list li::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     content: "\f058";
     color: #019875;
     margin-right: 7px;

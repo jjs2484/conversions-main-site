@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Conversions Main Site
  * Description: Styles, scripts, and functions.
- * Version: 1.0.9
+ * Version: 1.1.0
  * Author: js2484
  * Author URI: https://conversionswp.com
  */
@@ -328,7 +328,7 @@ class Conversions_Main_Site {
 	 */
 	public function conversions_nav_open_wrapper( $navbar_open ) {
 
-		$nav_notice = '<div role="alert" class="alert alert-info"><div class="container-fluid">Conversions v9.0 RC1 with Bootstrap 5 is available <a href="/download/" style="color:#0c5460"><strong>Download</strong></a></div></div>';
+		$nav_notice = '<div role="alert" class="alert alert-info"><div class="container-fluid">Conversions v9.0 RC2 with Bootstrap 5 is available <a href="/download/" style="color:#0c5460"><strong>Download</strong></a></div></div>';
 
 		$navbar_open = $nav_notice . $navbar_open;
 
