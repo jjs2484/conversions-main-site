@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Conversions Main Site
  * Description: Styles, scripts, and functions.
- * Version: 1.1.0
+ * Version: 1.2
  * Author: js2484
  * Author URI: https://conversionswp.com
  */
@@ -35,8 +35,8 @@ class Conversions_Main_Site {
 		add_filter( 'wp_nav_menu_items', [ $this, 'wp_nav_menu_items' ], 777, 2 );
 		add_shortcode( 'theme_stats', [ $this, 'theme_stats' ] );
 		add_filter( 'wp_nav_menu', [ $this, 'conversions_menu_notitle' ] );
-		add_filter( 'conversions_nav_open_wrapper', [ $this, 'conversions_nav_open_wrapper' ] );
-		add_action( 'wp_head', [ $this, 'conversions_topbar_style' ], 9999 );
+		// add_filter( 'conversions_nav_open_wrapper', [ $this, 'conversions_nav_open_wrapper' ] );
+		// add_action( 'wp_head', [ $this, 'conversions_topbar_style' ], 9999 );
 	}
 
 	/**
